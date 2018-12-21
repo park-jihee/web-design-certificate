@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        #imdslide{
+            width: 1000px; height: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #slide{
+            width: 3000px;
+            height: 500px;
+            transition: all 2s;
+            position: relative;
+        }
+
+        #slide li {
+            width: 1000px;
+            height: 500px;
+            float: left;
+        }
+
+        #slide img {
+            width: 1000px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="imdslide">
+    <ul id="slide">
+        <li><img src="./img/slide_1.jpg" alt=""></li>
+        <li><img src="./img/slide_2.jpg" alt=""></li>
+        <li><img src="./img/slide_3.jpg" alt=""></li>
+    </ul>
+</div>
+</body>
+<script src="js/script.js"></script>
+
+</html>

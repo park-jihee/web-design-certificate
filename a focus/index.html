@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            color: black;
+        }
+        ul li {
+            float: left;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">ABC</a></li>
+        <li><a href="#">DEF</a></li>
+        <li><a href="#">GHI</a></li>
+    </ul>
+</body>
+<script>
+    $("a").focusin(function(){
+        $(this).css({"color" : "red"})
+    })
+    $("a").focusout(function(){
+        $(this).css({"color" : "inherit"})
+    })
+</script>
+
+</html>
